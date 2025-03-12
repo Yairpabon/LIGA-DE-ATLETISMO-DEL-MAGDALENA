@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/LOGO LIGA SIN FONDO.png">
+    <title>Contacto - Liga de Atletismo del Magdalena</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            color: #333;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background: linear-gradient(to right, rgb(0, 0, 0,05), rgb(7, 51, 95));
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Estilos del menú de navegación */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sección de contacto */
+        #contacto {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #contacto h2 {
+            color:black;
+            margin-bottom: 20px;
+        }
+
+        .contacto-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .contacto-info p {
+            margin: 10px 0;
+            
+        }
+
+        /* Estilos del formulario */
+        form {
+            max-width: 600px;
+            margin: 15px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            background-color: white;
+        }
+
+        form label {
+            display: flex;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 4px;
+            margin-top: 5px;
+            margin: auto;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            background-color: #03203d;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #03203d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Liga de Atletismo del Magdalena</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="calendario.html">calendario</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        
+        <div class="contacto-info">
+            <p><strong>Teléfono:</strong> +57 ·········</p>
+            <p><strong>Email:</strong> ligadeatletismodelmagdalena@gmail.com</p>
+            <p><strong>Dirección:</strong> Pista de atletismo bureche, Santa Marta, Magdalena</p>
+        </div>
+        <hr>
+        <h3>Envíanos un mensaje</h3>
+        <form action="#" method="POST">
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Liga de Atletismo del Magdalena</p>
+    </footer>
+</body>
+</html>

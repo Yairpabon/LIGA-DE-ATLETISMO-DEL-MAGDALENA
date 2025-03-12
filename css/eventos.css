@@ -1,0 +1,204 @@
+/* Variables de color */
+:root {
+    --color-1: #d62b1f;
+    --color-2: #e34d2b;
+    --color-3: #f09f3d;
+    --color-4: #4e9fca;
+    --color-5: #0a4f94;
+    --color-bg: #f8f9fa;
+    --color-text: #333;
+    --color-6: #03203d;
+    background: linear-gradient(to right, rgb(0, 0, 0,05), rgb(7, 51, 95));
+    
+}
+
+/* Reset y estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(167, 155, 155), rgb(255, 255, 255));
+    color: var();
+}
+
+/* Encabezado */
+header {
+    background-color: var(--color-6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: double;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: var();
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--color-1);
+}
+
+/* Sección de calendario */
+.calendar {
+    padding: 20px;
+    text-align: center;
+}
+
+.calendar h2 {
+    font-size: 2em;
+    color: var(--color-);
+    margin-bottom: 20px;
+}
+
+/* Mes */
+.month {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color:#f8f9fa
+    ;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.month h3 {
+    background: linear-gradient(to right, rgb(0, 0, 0,05), rgb(11, 65, 119));
+    background-color: var(--color-bg);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Evento */
+.event {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid var(--color-text);
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s;
+
+}
+
+.event:hover {
+    transform: translateY(-5px);
+}
+
+.event .date {
+    display: block;
+    font-size: 1.2em;
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+.event h4 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: var(--color-);
+}
+
+/*pie de pagina*/
+footer {
+    background-color:black; /* Fondo oscuro */
+    color: #ccc; /* Texto gris claro */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: colun;
+    align-items: end;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 100px; /* Ajusta el tamaño del logo */
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-social {
+    padding: 10px;
+    
+      
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+}
+
+.footer-social img {
+    
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-copy {
+    font-size: 12px;
+    margin: auto;
+    color: #aaa;
+}
+
+
+/*boto de regreso*/
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); }
+    15% { opacity: 0.5; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+    animation: blink 3s infinite alternate; /* Aplica la animación */
+}
+
+#backToTop:hover {
+    background-color: #0e2e50;
+    animation: none; /* Detiene el parpadeo cuando el usuario pasa el mouse */
+}

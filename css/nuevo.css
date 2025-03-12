@@ -1,0 +1,148 @@
+/* Paleta de colores */
+:root {
+    --color-1: #d62b1f;
+    --color-2: #e34d2b;
+    --color-3: #f09f3d;
+    --color-4: #4e9fca;
+    --color-5: #0a4f94;
+}
+
+/* Estilos generales */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    background-position: center;
+}
+
+
+
+/* Sección principal */
+.hero {
+    
+        background-image: url(Salida\ partidor\ foto\ .JPG);  /* Ruta de tu imagen */
+        background-size: cover;  /*Ajusta la imagen para que cubra toda la sección */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center;
+        background-color: rgb(0,0,0,0.5 );
+        background-blend-mode: darken;
+    
+    
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+blockquote {
+font-family: cursive;
+color:aliceblue
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-3);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: var(--color-2);
+}
+
+/* Sección informativa */
+.info {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--color-5);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-5);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Sección principal */
+.info-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.info-section h2 {
+    font-size: 2em;
+    color: var(--color-5);
+    margin-bottom: 20px;
+}
+
+/* Diseño en cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Caja de cada sección */
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-position: center;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes */
+.info-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-position: center;
+
+}
+
+/* Títulos y texto */
+.info-box h3 {
+    color: var(--color-1);
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.info-box p {
+    color: #555;
+    font-size: 1em;
+}

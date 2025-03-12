@@ -1,0 +1,172 @@
+ /* Estilos generales */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(to right, rgb(0, 0, 0,05), rgb(7, 51, 95));
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/*=================*/
+/* TARJETA QUE SE DESLIZA*/
+
+  
+ 
+  
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  .container .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+     5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+  }
+  .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .card .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+  }
+  .container .card .box .content h1 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.02);
+    transition: 0.5s;
+  }
+  .container .card .box .content h2 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.4s;
+  }
+  .container .card .box .content p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.4s;
+  }
+  .container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .container .card:hover .box 
+  {
+    transform: translateY(-50px);
+    transition: 0.5S;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to right, rgb(0, 0, 0,05), rgb(7, 51, 95));
+  
+  }
+  .container .card:hover .box .content h2 {
+    color: rgb(255, 255, 255);
+  }
+  .container .card:hover .box .content p {
+    color: rgb(255, 255, 255);
+  }
+  
+  
+/*========================*/
+
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Nosotros */
+#nosotros {
+    padding: 2rem;
+    text-align: center;
+}
+
+#nosotros h2 {
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+
